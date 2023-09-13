@@ -10,4 +10,6 @@ visited path of an Enigma2 STB
 1. /etc/tuxbox/config
 2. /etc/enigma2
 3. /usr/share ....
-*** for more speed to manage your Enigma2 STB. ***
+___
+
+for more speed to manage your Enigma2 STB.
