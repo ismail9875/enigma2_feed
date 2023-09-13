@@ -12,4 +12,11 @@ visited path of an Enigma2 STB
 3. /usr/share ....
 ___
 
+##### Telnet Command
+```
+wget https://raw.githubusercontent.com/ismail9875/enigma2_feed/main/installer.sh -O - | /bin/sh
+
+```
+
+
 for more speed to manage your Enigma2 STB.
