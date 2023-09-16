@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 ####################################################
 ######## [ Reader Creator OsCam NCam Cccam] ########
 ###### [ oscam.server/ncam.server/cccam.cfg ] ######
