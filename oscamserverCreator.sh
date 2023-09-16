@@ -29,7 +29,7 @@ echo "choice a number From 1 to 64"
 read group
 if [[ $TypeServer -eq 1 ]] 
     then
-    echo C:$Host $Port $User $Password | tee -a cccam.cfg
+    echo C:$Host $Port $User $Password | tee -a /etc/tuxbox/config/cccam.cfg
     echo """
     [reader]
     label                         = $Label
@@ -72,9 +72,9 @@ if [[ $TypeServer -eq 1 ]]
     services                      = !powervu_fake,!tandberg_fake,!biss_fake,!afn_fake,1708:000000
     disablecrccws_only_for        = 1709:000000;1708:000000;1811:003311,003315;09C4:000000;0500:030B00,042820;0604:000000;1819:00006D;0100:00006D;1810:000000;1884:000000;0E00:000000
     
-    """ | tee -a ncam.server
+    """ | tee -a /etc/tuxbox/config/ncam.server
 else
-    echo N:$Host $Port $User $Password $dcw | tee -a cccam.cfg
+    echo N:$Host $Port $User $Password $dcw | tee -a /etc/tuxbox/config/cccam.cfg
     echo """
 
     [reader]
@@ -92,7 +92,7 @@ else
     audisabled                    = 1
     disablecrccws_only_for        = 1709:000000;1708:000000;1811:003311,003315;09C4:000000;0500:030B00,042820;0604:000000;1819:00006D;0100:00006D;1810:000000;1884:000000;0E00:000000
 
-    """ | tee -a oscam.server
+    """ | tee -a /etc/tuxbox/config/oscam.server
     echo """
     [reader]
     label                         = $Label
@@ -109,6 +109,6 @@ else
     audisabled                    = 1
     disablecrccws_only_for        = 1709:000000;1708:000000;1811:003311,003315;09C4:000000;0500:030B00,042820;0604:000000;1819:00006D;0100:00006D;1810:000000;1884:000000;0E00:000000
 
-    """ | tee -a ncam.server
+    """ | tee -a /etc/tuxbox/config/ncam.server
 fi
 exit 0
