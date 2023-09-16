@@ -73,6 +73,7 @@ if [[ $TypeServer -eq 1 ]]; then
     
     """ | tee -a /etc/tuxbox/config/ncam.server
 else
+then
     echo N:$Host $Port $User $Password $dcw | tee -a /etc/tuxbox/config/cccam.cfg
     echo """
 
