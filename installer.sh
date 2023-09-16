@@ -6,7 +6,7 @@ echo "#####[        Tangier : 11-9-23        ]######"
 echo "##############################################"
 # --- Create SymLinks Folder ---
 
-cd / 
+cd ./
 mkdir SymLinks 
 mkdir SymLinks/etc 
 
