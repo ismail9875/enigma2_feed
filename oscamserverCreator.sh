@@ -27,8 +27,7 @@ echo "Type Password"
 read Password
 echo "choice a number From 1 to 64"
 read group
-if [[ $TypeServer -eq 1 ]] 
-    then
+if [[ $TypeServer -eq 1 ]]; then
     echo C:$Host $Port $User $Password | tee -a /etc/tuxbox/config/cccam.cfg
     echo """
     [reader]
@@ -48,7 +47,7 @@ if [[ $TypeServer -eq 1 ]]
     ccckeepalive                  = 1
     cccreshare                    = 0
     audisabled                    = 1
-    """ | tee -a OsCam.server
+    """ | tee -a /etc/tuxbox/config/osc9am.server
     echo """
     [reader]
     label                         = $Label
