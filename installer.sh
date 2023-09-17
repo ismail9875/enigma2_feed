@@ -35,7 +35,7 @@ echo ".."
 ln -s /usr/share/enigma2/ SymLinks/ 
 echo "Create /usr/share/picon Symbolic Link .."
 echo ".."
-ln -s /usr/share/picon/ SymLinks/ 
+ln -s /usr/share/enigma2/picon/ SymLinks/ 
 echo "Create /media/hdd Symbolic Link .."
 echo ".."
 ln -s /media/hdd/ SymLinks/ 
