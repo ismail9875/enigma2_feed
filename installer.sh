@@ -35,13 +35,16 @@ echo ".."
 ln -s /usr/share/enigma2/ SymLinks/ 
 echo "Create /usr/share/picon Symbolic Link .."
 echo ".."
-ln -s /usr/share/enigma2/picon/ SymLinks/ 
+cd /usr/share/enigma/
+ln -s /picon/ SymLinks/ 
 echo "Create /media/hdd Symbolic Link .."
 echo ".."
+cd /
 ln -s /media/hdd/ SymLinks/ 
 echo "create /usr/..../Plugins/Extentions .."
 echo ".."
-ln -s /usr/lib/enigma2/python SymLinks/
+cd /usr/lib/enigma2/python/Plugins/Extentions
+ln -s /Extentions/ SymLinks/
 echo "==============================="
 echo "==== All Links Are Created ===="
 echo "==============================="
@@ -52,7 +55,4 @@ echo "###############################################"
 echo "############   [  End All Proccess  ]   #######"
 echo "############   [ Restat Enigma2 GUI ]   #######" 
 echo "###############################################"
-#init 4
-#sleep 3
-#init 1
 exit 0
