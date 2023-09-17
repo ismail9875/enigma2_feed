@@ -33,18 +33,13 @@ ln -s /etc/enigma2/ SymLinks/etc/
 echo "Create /usr/share/enigma2 Symbolic Link .."
 echo ".."
 ln -s /usr/share/enigma2/ SymLinks/ 
-echo "Create /usr/share/picon Symbolic Link .."
-echo ".."
-cd /usr/share/enigma/
-ln -s /picon/ SymLinks/ 
 echo "Create /media/hdd Symbolic Link .."
 echo ".."
 cd /
 ln -s /media/hdd/ SymLinks/ 
-echo "create /usr/..../Plugins/Extentions .."
+echo "create /usr/lib/enigma2/python"
 echo ".."
-cd /usr/lib/enigma2/python/Plugins/Extentions
-ln -s /Extentions/ SymLinks/
+ln -s /usr/lib/enigma2/python/ SymLinks/
 echo "==============================="
 echo "==== All Links Are Created ===="
 echo "==============================="
