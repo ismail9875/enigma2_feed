@@ -33,7 +33,7 @@ if [[ $TypeServer -eq 1 ]]; then
     [reader]
     label                         = $Label
     enable                        = 1
-    protocol                      = $TypeServer
+    protocol                      = cccam
     device                        = $Host,$Port
     user                          = $User
     password                      = $Password
@@ -47,12 +47,12 @@ if [[ $TypeServer -eq 1 ]]; then
     ccckeepalive                  = 1
     cccreshare                    = 0
     audisabled                    = 1
-    """ | tee -a /etc/tuxbox/config/osc9am.server
+    """ | tee -a /etc/tuxbox/config/oscam.server
     echo """
     [reader]
     label                         = $Label
     enable                        = 1
-    protocol                      = $TypeServer
+    protocol                      = cccam
     device                        = $Host,$Port
     user                          = $User
     password                      = $Pass
@@ -80,7 +80,7 @@ then
     [reader]
     label                         = $Label
     enable                        = 1
-    protocol                      = $TypeServer
+    protocol                      = newcamd
     device                        = $Host,$Port
     key                           = $dcw
     user                          = $User
@@ -97,7 +97,7 @@ then
     [reader]
     label                         = $Label
     enable                        = 1
-    protocol                      = $TypeServer
+    protocol                      = newcamd
     device                        = $Host,$Port
     key                           = $dcw
     user                          = $User
