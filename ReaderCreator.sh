@@ -107,11 +107,11 @@ if [[ ${fileName} -eq 1 ]]; then
 #--- CCcam line ----#
     if [[ ${ServerTp} -eq 1 ]]; then
     data_user
-    echo "C: ${Host} ${Port} ${User} ${Pass}" | tee -a CCcam.cfg /etc/tuxbox/config/cccam.cfg
+    echo "C: ${Host} ${Port} ${User} ${Pass}" | tee -a /etc/tuxbox/config/CCcam.cfg
 #---- NewCamd line ----#
     elif [[ ServerTp -eq 2 ]]; then
     data_user
-    echo "N: ${Host} ${Port} ${Use} ${Pass} 0102030405060708091011121314" | tee -a cccam.cfg #/etc/tuxbox/config/CCacam.cfg
+    echo "N: ${Host} ${Port} ${Use} ${Pass} 0102030405060708091011121314" | tee -a /etc/tuxbox/config/CCcam.cfg
     else
     echo "Sorry! Invalid Entry."
     fi
@@ -123,19 +123,19 @@ elif [[ ${fileName} -eq 2 ]]; then
         PrintLabel
         data_user
         GroupF
-        CCcamd_reader | tee -a oscam.server #/etc/tuxbox/config/oscam.server
+        CCcamd_reader | tee -a /etc/tuxbox/config/oscam.server
 #---- NewCamd line ----#
     elif [[ ${ServerTp} -eq 2 ]]; then
         echo "Tape A label for line please : "
         data_user
         GroupF
-        NewCamd_reader | tee -a oscam.server #/etc/tuxbox/config/oscam.server
+        NewCamd_reader | tee -a /etc/tuxbox/config/oscam.server
 #---- MgCamd Line ----#
     elif [[ ${ServerTp} -eq 3 ]]; then
         PrintLabel
         data_user
         GroupF
-        NewCmd_reader | tee -a oscam.server #/etc/tuxbox/config/oscam.server    
+        NewCmd_reader | tee -a /etc/tuxbox/config/oscam.server    
     else
         echo "Sorry! Invalid Entry."
     fi
@@ -147,18 +147,18 @@ elif [[ ${fileName} -eq 3 ]]; then
         PrintLabel
         data_user
         GroupF
-        CCcamd_reader | tee -a ncam.server #/etc/tuxbox/config/ncam.server
+        CCcamd_reader | tee -a /etc/tuxbox/config/ncam.server
 #---- NewCamd Line ----#
     elif [[ ${ServerTp} -eq 2 ]]; then
         PrintLabel
         data_user
-        NewCmd_reader | tee -a ncam.server #/etc/tuxbox/config/ncam.server
+        NewCmd_reader | tee -a /etc/tuxbox/config/ncam.server
 #---- MgCamd Line 
     elif [[ ${ServerTp} -eq 3 ]]; then
         PrintLabel
         data_user
         GroupF
-        MgCamd_reader | tee -a ncam.server #/etc/tuxbox/config/ncam.server    
+        MgCamd_reader | tee -a /etc/tuxbox/config/ncam.server    
     else
         echo "Sorry! Invalid Entry."
     fi
