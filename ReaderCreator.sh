@@ -107,11 +107,11 @@ if [[ ${fileName} -eq 1 ]]; then
 #--- CCcam line ----#
     if [[ ${ServerTp} -eq 1 ]]; then
     data_user
-    echo "C: ${Host} ${Port} ${User} ${Pass}" | tee -a ccxam.cfg /etc/tuxbox/config/cccam.cfg
+    echo "C: ${Host} ${Port} ${User} ${Pass}" | tee -a CCcam.cfg /etc/tuxbox/config/cccam.cfg
 #---- NewCamd line ----#
     elif [[ ServerTp -eq 2 ]]; then
     data_user
-    echo "N: ${Host} ${Port} ${Use} ${Pass} 0102030405060708091011121314" | tee -a cccam.cfg #/etc/tuxbox/config/cccam.cfg
+    echo "N: ${Host} ${Port} ${Use} ${Pass} 0102030405060708091011121314" | tee -a cccam.cfg #/etc/tuxbox/config/CCacam.cfg
     else
     echo "Sorry! Invalid Entry."
     fi
