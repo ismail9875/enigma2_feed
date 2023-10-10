@@ -19,7 +19,7 @@ ___
 
 ##### Telnet Command For SymLinks.sh
 ```
-wget https://raw.githubusercontent.com/ismail9875/enigma2_feed/main/installer.sh -O - | /bin/sh
+wget https://raw.githubusercontent.com/ismail9875/enigma2_feed/main/installer.sh && bash installer.sh
 ```
 
 
